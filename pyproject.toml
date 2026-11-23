@@ -1,0 +1,16 @@
+[project]
+name = "laser-fmr-xuv"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "mbistyles",
+    "nbconvert>=7.17.2",
+    "nbformat>=5.11.1",
+    "udkm1dsim",
+]
+
+[tool.uv.sources]
+udkm1dsim = { path = "../udkm1Dsim", editable = true }
+mbistyles = { path = "../mbistyles", editable = true }
